@@ -17,7 +17,7 @@ impl<T, Key, Value> IntoMap for T
 		T: Iterator<Item=(Key, Value)>,
 		Key: Hash + Eq
 {
-	type Key =Key;
+	type Key   = Key;
 	type Value = Value;
 
 	fn collect_map(self) -> HashMap<Key, Value, RandomState>{
@@ -32,10 +32,8 @@ impl<T, Key, Value> IntoMap for T
 
 pub trait IntoSet {
 	type Value;
-	#[inline(always)]
 	fn collect_set(self) -> HashSet<Self::Value>;
 
-	#[inline(always)]
 	fn collect_set_with_hasher<S: BuildHasher>(self, hash_builder: S) -> HashSet<Self::Value, S>;
 }
 

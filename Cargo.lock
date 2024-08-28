@@ -12,3 +12,4 @@ dependencies = [
 [[package]]
 name = "pipe"
 version = "0.1.0"
+source = "git+https://github.com/artpeixoto/pipe#f0178a7e13a7aca31604b96054198a9d53b93532"

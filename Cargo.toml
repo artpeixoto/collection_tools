@@ -4,4 +4,4 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-pipe = { version = "0.1.0", path = "../pipe" }
+pipe = { git = "https://github.com/artpeixoto/pipe", version = "0.1.0" }
